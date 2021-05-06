@@ -1,6 +1,6 @@
-# admin
+# Responsive Admin Dashboard
 
-Responsive Admin Dashboard
+A Flutter project (web, ios, android).
 
 ## Getting Started
 
