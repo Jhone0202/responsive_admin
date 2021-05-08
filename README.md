@@ -4,7 +4,7 @@ Flutter project developed to study responsiveness in different devices. (Desktop
 
 ## Illustration
 
-![alt text](https://ibb.co/tbCTswh)
+![alt text](https://i.ibb.co/Cn037pt/Dash.png)
 
 ## Getting Started
 
