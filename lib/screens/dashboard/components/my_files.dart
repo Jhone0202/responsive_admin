@@ -24,6 +24,7 @@ class MyFiles extends StatelessWidget {
               horizontal: defaultPadding * 1.5,
               vertical: defaultPadding / (Responsive.isMobile(context) ? 2 : 1),
             ),
+            primary: primaryColor,
           ),
           icon: Icon(Icons.add),
           label: Text('Add new'),

@@ -1,6 +1,10 @@
 # Responsive Admin Dashboard
 
-A Flutter project (web, ios, android).
+Flutter project developed to study responsiveness in different devices. (Desktop, Tablet and Mobile)
+
+## Illustration
+
+![alt text](https://ibb.co/tbCTswh)
 
 ## Getting Started
 

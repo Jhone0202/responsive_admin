@@ -27,28 +27,32 @@ class Header extends StatelessWidget {
         if (!Responsive.isMobile(context))
           Spacer(flex: Responsive.isDesktop(context) ? 2 : 1),
         Expanded(
-          child: TextField(
-            decoration: InputDecoration(
-              fillColor: secondaryColor,
-              filled: true,
-              hintText: 'Search',
-              border: OutlineInputBorder(
-                borderSide: BorderSide.none,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              suffixIcon: IconButton(
-                icon: Icon(Icons.search_rounded),
-                onPressed: () {},
-                splashRadius: 10,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+            child: TextField(
+              decoration: InputDecoration(
+                fillColor: secondaryColor,
+                filled: true,
+                hintText: 'Search',
+                border: OutlineInputBorder(
+                  borderSide: BorderSide.none,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                suffixIcon: IconButton(
+                  icon: Icon(Icons.search_rounded),
+                  onPressed: () {},
+                  splashRadius: 10,
+                ),
               ),
             ),
           ),
         ),
-        SizedBox(width: defaultPadding * 2),
         TextButton(
           onPressed: () {},
           child: Row(
             children: [
+              if (!Responsive.isMobile(context))
+                SizedBox(width: defaultPadding),
               ClipOval(
                 child: Image.asset(
                   'assets/images/pp.jpg',

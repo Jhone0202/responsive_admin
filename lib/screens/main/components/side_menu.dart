@@ -1,3 +1,4 @@
+import 'package:admin/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -12,7 +13,20 @@ class SideMenu extends StatelessWidget {
       child: ListView(
         children: [
           DrawerHeader(
-            child: Image.asset('assets/images/logo.png'),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.show_chart,
+                  color: primaryColor,
+                ),
+                SizedBox(width: defaultPadding / 2),
+                Text(
+                  'My Dash',
+                  style: Theme.of(context).textTheme.subtitle1,
+                ),
+              ],
+            ),
           ),
           DrawerListTile(
             title: 'Dashboard',
