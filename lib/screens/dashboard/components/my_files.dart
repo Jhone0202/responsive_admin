@@ -1,3 +1,4 @@
+import 'package:admin/responsive.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -21,7 +22,7 @@ class MyFiles extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             padding: EdgeInsets.symmetric(
               horizontal: defaultPadding * 1.5,
-              vertical: defaultPadding,
+              vertical: defaultPadding / (Responsive.isMobile(context) ? 2 : 1),
             ),
           ),
           icon: Icon(Icons.add),
